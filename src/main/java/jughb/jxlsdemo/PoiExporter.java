@@ -3,6 +3,7 @@ package jughb.jxlsdemo;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import jughb.jxlsdemo.exceptions.ExcelGenerationException;
 import jughb.jxlsdemo.model.Article;
 import jughb.jxlsdemo.model.ArticleGroup;
 import jughb.jxlsdemo.model.ShoppingCart;
@@ -15,7 +16,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 
 public class PoiExporter {
 
-    public void exportPoi(ShoppingCart shoppingCart, String destFile) {
+    public void exportPoi(ShoppingCart shoppingCart, String destFile) throws ExcelGenerationException {
         Workbook wb = new HSSFWorkbook();
         Sheet sheet = wb.createSheet();
 
@@ -46,7 +47,7 @@ public class PoiExporter {
         try(FileOutputStream out = new FileOutputStream(destFile)) {
             wb.write(out);
         } catch(IOException e) {
-            e.printStackTrace();
+            throw new ExcelGenerationException(e);
         }
     }
 }
