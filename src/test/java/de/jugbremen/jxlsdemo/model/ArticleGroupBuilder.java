@@ -1,6 +1,9 @@
-package jughb.jxlsdemo.model;
+package de.jugbremen.jxlsdemo.model;
 
 import java.util.ArrayList;
+
+import de.jugbremen.jxlsdemo.model.Article;
+import de.jugbremen.jxlsdemo.model.ArticleGroup;
 
 public class ArticleGroupBuilder {
 

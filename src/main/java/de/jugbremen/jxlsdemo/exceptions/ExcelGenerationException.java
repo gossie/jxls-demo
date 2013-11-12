@@ -1,4 +1,4 @@
-package jughb.jxlsdemo.exceptions;
+package de.jugbremen.jxlsdemo.exceptions;
 
 public class ExcelGenerationException extends Exception {
 

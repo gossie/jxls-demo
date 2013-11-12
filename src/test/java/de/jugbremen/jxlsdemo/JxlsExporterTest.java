@@ -1,14 +1,14 @@
-package jughb.jxlsdemo;
-
-import jughb.jxlsdemo.model.ArticleBuilder;
-import jughb.jxlsdemo.model.ArticleGroupBuilder;
-import jughb.jxlsdemo.model.ShoppingCart;
-import jughb.jxlsdemo.model.ShoppingCartBuilder;
+package de.jugbremen.jxlsdemo;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class PoiExporterTest {
+import de.jugbremen.jxlsdemo.model.ArticleBuilder;
+import de.jugbremen.jxlsdemo.model.ArticleGroupBuilder;
+import de.jugbremen.jxlsdemo.model.ShoppingCart;
+import de.jugbremen.jxlsdemo.model.ShoppingCartBuilder;
+
+public class JxlsExporterTest {
 
     private ShoppingCart shoppingCart;
 
@@ -48,8 +48,8 @@ public class PoiExporterTest {
 
 
     @Test
-    public void testExportPoi() throws Exception {
-        PoiExporter excelExporter = new PoiExporter();
-        excelExporter.exportPoi(shoppingCart, "target/shopping-list_POI.xls");
+    public void testExportJxls() throws Exception {
+        JxlsExporter excelExporter = new JxlsExporter();
+        excelExporter.exportJxls(shoppingCart, "src/test/resources/de/jugbremen/jxlsdemo/shopping-list.xls", "target/shopping-list_JXLS.xls");
     }
 }

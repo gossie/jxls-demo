@@ -1,18 +1,19 @@
-package jughb.jxlsdemo;
+package de.jugbremen.jxlsdemo;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import jughb.jxlsdemo.exceptions.ExcelGenerationException;
-import jughb.jxlsdemo.model.Article;
-import jughb.jxlsdemo.model.ArticleGroup;
-import jughb.jxlsdemo.model.ShoppingCart;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+
+import de.jugbremen.jxlsdemo.exceptions.ExcelGenerationException;
+import de.jugbremen.jxlsdemo.model.Article;
+import de.jugbremen.jxlsdemo.model.ArticleGroup;
+import de.jugbremen.jxlsdemo.model.ShoppingCart;
 
 public class PoiExporter {
 

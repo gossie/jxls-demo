@@ -1,4 +1,6 @@
-package jughb.jxlsdemo.model;
+package de.jugbremen.jxlsdemo.model;
+
+import de.jugbremen.jxlsdemo.model.Article;
 
 public class ArticleBuilder {
 

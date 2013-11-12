@@ -1,4 +1,4 @@
-package jughb.jxlsdemo.model;
+package de.jugbremen.jxlsdemo.model;
 
 import java.util.List;
 
