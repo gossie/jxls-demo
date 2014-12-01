@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.jugbremen</groupId>
     <artifactId>jxls-demo</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>jxls-demo</name>
     <description>jxls demo</description>
     
